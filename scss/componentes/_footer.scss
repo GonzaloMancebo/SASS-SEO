@@ -1,0 +1,21 @@
+@import "variable";
+
+footer {
+  grid-area: footer;
+  margin-top: 100px;
+  height: 200px;
+  background-color: map-get($colors, "negro");
+  p {
+    text-align: right;
+    color: map-get($colors, "blanco");
+  }
+  .footer_menu {
+    grid-area: footer;
+    position: absolute;
+    margin-top: 100px;
+    background-color: map-get($colors, "negro");
+    p {
+      @extend p;
+    }
+  }
+}

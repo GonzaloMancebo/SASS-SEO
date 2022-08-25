@@ -1,0 +1,67 @@
+@import "variable";
+
+aside {
+  grid-area: aside;
+  .aside_emoji {
+      border-radius: 7px;
+      width: 200px;
+      height: 200px;
+      background-color: rgb(255,0,0);
+      position: relative;
+      animation: myfirst 5s linear 2s infinite alternate;
+    }
+    
+    @keyframes myfirst {
+      0%   {background-color:rgb(255,0,0); left:0px; top:0px;}
+      25%  {background-color:rgb(255, 255, 255); left:500px; top:0px;}
+      50%  {background-color:rgb(255,0,0); left:100px; top:200px;}
+      75%  {background-color:rgb(255, 255, 255); left:0px; top:100px;}
+      100% {background-color:rgb(255,0,0); left:0px; top:0px;}
+    }
+      }  
+  
+  .text_p {
+    box-sizing: border-box;
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+
+    p {
+      margin-top: 50px;
+      color: map-get($colors, "negro");
+      font-size: map-get($tamaños, "font-p");
+    }
+  }
+  .iconos {
+    
+    height: 100px;
+    right: 50px;
+    transform: translate(-50%, -50%);
+    width:100px;
+    ul {
+      list-style-type: none;
+      li {
+        width: 80px;
+        height: 80px;
+        line-height: 75px;
+        margin: 0px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 5px solid;
+        float: left;
+        transition: all 0.5s ease;
+        .fa {
+          color: black;
+          margin-top: 10px;
+          transition: all 0.5s ease;
+          &:hover{
+            border: 5px solid #2345;
+            box-shadow: 0 0 15px;
+            transition: all 0.5s ease;
+          }
+        }
+      }
+    }
+  }
+

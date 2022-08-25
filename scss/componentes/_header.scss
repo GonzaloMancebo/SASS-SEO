@@ -1,0 +1,12 @@
+@import "variable";
+
+header {
+  grid-area: header;
+  height: 200px;
+  background-color: map-get($colors, "negro");
+
+  h1 {
+    color: map-get($colors, "blanco");
+    font-size: map-get($tamaños, "font-h1");
+  }
+}

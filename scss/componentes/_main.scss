@@ -1,0 +1,23 @@
+main {
+  grid-area: main;
+  .form_contenido {
+    border-radius: 5px;
+    border-style: initial;
+    padding: 30px;
+    height: 450px;
+    margin: auto;
+    width: 70%;
+    margin-top: 40px;
+    text-align: center;
+    background-color: map-get($colors, "formulario");
+    label {
+      color: map-get($colors, "blanco");
+    }
+  }
+  .main_ubicacion {
+    padding: 30px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+}
